@@ -1,0 +1,64 @@
+@if(isMobile){
+<div class="container">
+   <div class="row justify-content-center"></div>
+</div>
+} @else {
+
+<div class="page">
+   <header>
+      <div class="swoosh position-fixed"></div>
+      <div class="sticky-nav difference d-flex justify-content-between" #stickyNav>
+         <div class="logo"></div>
+         <!-- <div class="menu box" id="nav-btn" #navBtn (click)="navBtnClick()">
+                         <svg id="i1" class="icon" viewBox="20 30 60 40">
+                           <path id="top-line-1" d="M30,37 L70,37 Z"></path>
+                           <path id="middle-line-1" d="M30,50 L70,50 Z"></path>
+                           <path id="bottom-line-1" d="M30,63 L70,63 Z"></path>
+                         </svg>
+                       </div> -->
+      </div>
+      <div id="takeover-nav" #takeOverNav></div>
+   </header>
+
+   <section class="hero d-flex align-items-center justify-content-center">
+      <div class="video-wrap">
+         <video #videoElement autoplay muted playsinline loop>
+            <source src="/assets/imgs/IMG_1668 2.MP4" type="video/mp4" />
+            Your browser does not support the video tag.
+         </video>
+      </div>
+      <div class="position-absolute w-100 gradient-overlay"></div>
+      <div class="content position-relative text-center mb-5">
+         <h1 class="hero-title blend">
+            22yo
+            <br />
+            &amp; building the future
+         </h1>
+         <br />
+         <br />
+      </div>
+   </section>
+   <!-- <section class="hero d-flex align-items-center justify-content-center">
+                   <img id="video-bg" src="/assets/imgs/martinag13.JPG" alt="" srcset="" />
+                   <div class="position-absolute w-100 gradient-overlay"></div>
+                   <div class="content position-relative text-center mb-5">
+                      <h1 class="hero-title blend">
+                         Where Creativity
+                         <br />
+                         &amp; Development Meet.
+                      </h1>
+                      <br />
+                      <br />
+                   </div>
+                </section> -->
+   <section class="one">
+      <app-projects-gallery></app-projects-gallery>
+   </section>
+   <section class="two my-4">
+      <app-work></app-work>
+   </section>
+   <section class="three">
+      <app-mobile-photo-gallery></app-mobile-photo-gallery>
+   </section>
+</div>
+}

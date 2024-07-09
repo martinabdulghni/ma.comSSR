@@ -1,0 +1,7 @@
+<app-floating></app-floating>
+@if (!isMobile()) {
+<app-custom-cursor></app-custom-cursor>
+}
+<app-content [isMobile]="isMobile()"></app-content>
+
+<router-outlet />

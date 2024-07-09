@@ -1,0 +1,61 @@
+.floating-btn.asd {
+   border-radius: 26.5px;
+   background-color: #ffdd00;
+   border: 1px solid #ffdd00;
+   box-shadow: 0 16px 22px -17px #03153b;
+   color: #151414;
+   font-size: 16px;
+   line-height: 20px;
+   padding: 12px 20px;
+   position: fixed;
+   bottom: 20px;
+   right: 80px;
+   z-index: 999;
+}
+.floating-btn.mail {
+   border-radius: 26.5px;
+   background-color: #ffdd00;
+   border: 1px solid #ffdd00;
+   box-shadow: 0 16px 22px -17px #03153b;
+   color: #151414;
+   font-size: 16px;
+   line-height: 20px;
+   padding: 12px 20px;
+   position: fixed;
+   bottom: 20px;
+   right: 140px;
+   z-index: 999;
+}
+.floating-btn {
+   border-radius: 26.5px;
+   background-color: #ffdd00;
+   border: 1px solid #ffdd00;
+   box-shadow: 0 16px 22px -17px #03153b;
+   color: #151414;
+   font-size: 16px;
+   line-height: 20px;
+   padding: 12px 20px;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   z-index: 999;
+}
+
+.floating-btn:hover {
+   background-color: #151414;
+   color: #ffdd00;
+}
+
+.floating-btn:focus {
+   outline: none;
+}
+
+@media screen and (max-width: 480px) {
+   .social-panel-container.visible {
+      transform: translateX(0px);
+   }
+
+   .floating-btn {
+      right: 10px;
+   }
+}

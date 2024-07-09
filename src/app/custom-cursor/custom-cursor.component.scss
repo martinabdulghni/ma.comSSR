@@ -1,0 +1,18 @@
+.cursor {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   position: absolute;
+   transition-duration: 10ms;
+   transition-timing-function: ease-out;
+   animation: cursorAnim 0.1s infinite alternate;
+   pointer-events: none !important;
+   z-index: 9999;
+   transform: translate(-50%, -50%) scale(1.15);
+   transition: transform 350ms ease;
+   mix-blend-mode: difference;
+   background-color: #00bcd4;
+}
+.expand {
+   transform: translate(-50%, -50%) scale(1.45);
+}

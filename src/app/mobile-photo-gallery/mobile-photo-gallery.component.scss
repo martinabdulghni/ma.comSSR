@@ -1,0 +1,39 @@
+.modal button.close {
+    right: 0;
+    outline: 0;
+  }
+  
+  #gallery-lightbox > div {
+    overflow: hidden;
+  }
+  #gallery-lightbox img {
+    height: 350px;
+    object-fit: cover;
+    transition: 0.1s all;
+  }
+  
+  #gallery-lightbox img:hover {
+    scale: 1.1;
+    filter: grayscale(0%);
+  }
+  .et-hero-tabs,
+  .et-slide {
+    padding: 4em 2em 2em 2em;
+    h1 {
+      font-size: 2rem;
+      letter-spacing: 1rem;
+    }
+    h3 {
+      font-size: 1rem;
+      letter-spacing: 0.3rem;
+      opacity: 0.6;
+    }
+  }
+  .img-holder {
+    overflow: hidden;
+    border-top-left-radius: 15vw;
+    border-bottom-left-radius: 15vw;
+    position: relative;
+    left: 5vw;
+  }
+  

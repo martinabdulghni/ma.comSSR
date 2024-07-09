@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300&display=swap');
+@import 'bootstrap/scss/bootstrap';
+
+html {
+   cursor: none !important;
+}
+body {
+   font-family: 'Poppins', sans-serif;
+   background-color: #f5f5f5;
+   width: 100vw;
+}
+
+html,
+body {
+   height: 100%;
+   width: 100vw !important;
+   overflow-x: hidden;
+}
+body {
+   margin: 0;
+   font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+a {
+   all: unset;
+}
+
+/* Monokai color pattern */
+.monokai-black {
+   color: #000000;
+}
+
+.monokai-hardgrey {
+   color: #272822;
+}
+
+.monokai-darkgrey {
+   color: #3b3a32;
+}
+
+.monokai-grey {
+   color: #49483e;
+}
+
+.monokai-lightgrey {
+   color: #90907c;
+}
+
+.monokai-white {
+   color: #f5f5ec;
+}
+
+.monokai-yellow {
+   color: #ffe792;
+}
+
+.monokai-orange {
+   color: #fd971f;
+}
+
+.monokai-red {
+   color: #f92672;
+}
+
+.monokai-violet {
+   color: #ae81ff;
+}
+
+.monokai-teal {
+   color: #66d9ef;
+}
+
+.monokai-green {
+   color: #a6e22e;
+}
+
+.console-box {
+   width: 80%;
+   max-width: 920px;
+   max-height: 430px;
+   margin: 50px auto;
+   padding-left: 0;
+   font-family: Monospace, sans-serif;
+   background: #212122;
+   border-radius: 5px;
+   overflow: auto;
+   counter-reset: codeline;
+   -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+   animation: byBottom 1s ease;
+}
+
+.console-box li {
+   position: relative;
+   margin-left: 40px;
+   padding: 1px 10px;
+   list-style: none;
+}
+
+.console-box li:before {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+   content: '';
+   position: absolute;
+   width: 40px;
+   height: 100%;
+   top: 0;
+   left: -40px;
+   padding-top: 1px;
+   padding-right: 8px;
+   text-align: right;
+   background: #2e2e2f;
+   color: #59595b;
+   content: counter(codeline);
+   counter-increment: codeline;
+}
+
+.console-box li:first-child {
+   padding-top: 16px;
+}
+
+.console-box li:first-child:before {
+   padding-top: 16px;
+}
+
+.console-box li:last-child {
+   padding-bottom: 16px;
+}
+ol,
+ul {
+   padding-left: 0rem !important;
+}

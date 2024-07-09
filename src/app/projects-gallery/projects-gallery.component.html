@@ -1,0 +1,73 @@
+<section class="et-hero-tabs col-9 m-auto">
+   <h1 class="text-dark">PROJECTS</h1>
+   <h3 class="text-secondary">Made with love <3</h3>
+</section>
+
+<div class="row m-auto col-11 col-md-9 p-1">
+   @for (project of projects; track $index) {
+   <div class="card-holder col-12 col-md-4 col-sm-7 mb-4">
+      <div class="card">
+         <img class="card__img" src="{{ project.imgSrc }}" alt="Desert" />
+         @if (project.blob) {
+         <div class="blob {{ project.blobColor }}" placement="right"></div>
+         }
+
+         <div class="bg-light col-12" style="z-index: 3">
+            <div class="d-flex flex-wrap justify-content-center">
+               @for (skill of project.skills; track $index) {
+               <div class="text-{{ project.skillsColor }} badge bg-white m-1 mb-1">
+                  {{ skill }}
+               </div>
+               }
+            </div>
+         </div>
+         <div class="card__content">
+            <h1 class="card__header text-secondary">{{ project.title }}</h1>
+            <p class="card__text">
+               {{ project.body }}
+               <br />
+               <br />
+               <br />
+               <!-- <button class="card__btn">Explore <span>&rarr;</span></button> -->
+            </p>
+         </div>
+         <div class="card-status-container d-flex justify-content-between" style="border-radius: 7px; overflow: hidden">
+            @for (status of project.statusItems; track $index) {
+            <div class="text-secondary p-3 col">
+               <div class="status-data">{{ status.data }}</div>
+               <div class="status-title">{{ status.title }}</div>
+            </div>
+            }
+         </div>
+         <!-- <div class="p-2 m-auto">
+              <div
+                *ngFor="let tag of project.tags"
+                class="text-primary badge bg-{{ project.tagsBg }}  mx-1"
+              >
+                {{ tag }}
+              </div>
+            </div> -->
+         <div class="card-footer d-flex justify-content-between text-light" [style]="{ 'background-color': '#' + project.footerBg }">
+            <div class="d-flex justify-content-start col-9">
+               <div>{{ project.footer }}</div>
+            </div>
+            <div class="d-flex justify-content-end col-3">
+               @if (project.githubLink) {
+               <a class="ms-4" href="{{ project.githubLink }}">
+                  <fa-icon [icon]="['fab', 'github']"></fa-icon>
+               </a>
+               } @if (project.linkedInLink) {
+               <a class="ms-4" href="{{ project.linkedInLink }}">
+                  <fa-icon [icon]="['fab', 'linkedin']"></fa-icon>
+               </a>
+               } @if (project.externalLink) {
+               <a class="ms-4" href="{{ project.externalLink }}" target="_blank">
+                  <fa-icon [icon]="['fas', 'arrow-up-right-from-square']"></fa-icon>
+               </a>
+               }
+            </div>
+         </div>
+      </div>
+   </div>
+   }
+</div>

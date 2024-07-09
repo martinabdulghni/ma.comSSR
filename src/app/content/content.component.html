@@ -1,0 +1,78 @@
+@if(isMobile){
+<app-mobile-content></app-mobile-content>
+} @else {
+
+<div class="page">
+   <header>
+      <div class="swoosh position-fixed"></div>
+      <div class="sticky-nav difference d-flex justify-content-between" #stickyNav>
+         <div class="logo"></div>
+         <!-- <div class="menu box" id="nav-btn" #navBtn (click)="navBtnClick()">
+                     <svg id="i1" class="icon" viewBox="20 30 60 40">
+                       <path id="top-line-1" d="M30,37 L70,37 Z"></path>
+                       <path id="middle-line-1" d="M30,50 L70,50 Z"></path>
+                       <path id="bottom-line-1" d="M30,63 L70,63 Z"></path>
+                     </svg>
+                   </div> -->
+      </div>
+      <div id="takeover-nav" #takeOverNav></div>
+   </header>
+
+   <!-- <section class="hero d-flex align-items-center justify-content-center">
+      <div class="video-wrap">
+         <video #videoElement autoplay muted playsinline loop>
+            <source src="/assets/imgs/IMG_1668 2.MP4" />
+            Your browser does not support the video tag.
+         </video>
+      </div>
+      <div class="position-absolute w-100 gradient-overlay"></div>
+      <div class="content position-relative text-center mb-5">
+         <h1 class="hero-title blend">
+            Where Creativity
+            <br />
+            &amp; Development Meet.
+         </h1>
+         <br />
+         <br />
+      </div>
+   </section> -->
+
+   <app-hero></app-hero>
+
+   <!-- <section class="hero d-flex align-items-center justify-content-center bg position-relative">
+      <div class="position-absolute w-100 gradient-overlay"></div>
+      <div class="content position-relative text-center mb-5">
+         <h1 class="hero-title blend">
+            <p id="demo"></p>
+         </h1>
+      </div>
+      <p id="infoText" class="position-absolute text-light fade" style="bottom: 30px; left: 50%; transform: translateX(-50%); max-width: 1000px">
+         Martin is a Full-stack developer & desinger. Currently, he is a 3rd year M.Sc student in Applied Artificiell Intelligens, also working as a system developer at Navcite. Martin's qualifications include Microsoft certifications and hands-on
+         experience in ERP systems like Business Central 365 and Infor M3.
+      </p>
+      <pre ngNonBindable>
+         &lt;script&gt;
+         jQuery.fn.exists = function()&#123;
+             return this.length &gt; 0;
+         &#125;
+         if ($(".santa").exists())&#123;
+             console.log("Santa exists!");
+         &#125;
+         &lt;/script&gt;
+     </pre
+      >
+   </section> -->
+
+   <section class="one">
+      <app-projects-gallery></app-projects-gallery>
+   </section>
+   <section class="two my-4">
+      <app-work></app-work>
+   </section>
+   <section class="three">
+      <app-photos-gallery></app-photos-gallery>
+   </section>
+</div>
+}
+
+<app-footer></app-footer>

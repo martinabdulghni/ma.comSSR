@@ -1,0 +1,28 @@
+<section class="et-hero-tabs col-9 m-auto">
+   <div class="gallery-wrap">
+      @for (image of images; track $index) {
+      <img class="item item-1" [src]="image.src" alt="Image {{ $index + 1 }}" (click)="openImageModal($index, 0)" />
+      }
+   </div>
+   <div class="gallery-wrap2">
+      @for (image of images2; track $index) {
+      <img class="item item-1" [src]="image.src" alt="Image {{ $index + 1 }}" (click)="openImageModal($index, 1)" />
+      }
+   </div>
+   <div class="gallery-wrap2-2">
+      @for (image of images2; track $index) {
+      <img class="item item-1" [src]="image.src" alt="Image {{ $index + 1 }}" (click)="openImageModal($index, 1)" />
+      }
+   </div>
+   <div class="gallery-wrap3">
+      @for (image of images3; track $index) {
+      <img class="item item-1" [src]="image.src" alt="Image {{ $index + 1 }}" (click)="openImageModal($index, 2)" />
+      }
+   </div>
+</section>
+
+<ng-template #imageModal let-modal>
+   <div class="modal-body">
+      <img id="modal-image" class="w-100" [src]="modalImageSrc" alt="Modal Image" />
+   </div>
+</ng-template>
