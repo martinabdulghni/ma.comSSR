@@ -102,8 +102,6 @@ export class HeroComponent implements OnInit {
       const type = () => {
          if (this.container) {
             if (currentLine < this.codeLines.length) {
-               console.log('here');
-
                const line = this.codeLines[currentLine];
                if (currentChar < line.length) {
                   content += line[currentChar];
@@ -119,7 +117,6 @@ export class HeroComponent implements OnInit {
                }
             } else {
                // Apply syntax highlighting after all lines are written
-               console.log('here3');
 
                this.applySyntaxHighlighting();
             }

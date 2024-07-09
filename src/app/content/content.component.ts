@@ -36,7 +36,6 @@ export class ContentComponent implements AfterViewInit {
          setTimeout(() => {
             this.displayInfoText = true;
             const helloText = document.querySelector('#infoText');
-            console.log(helloText);
 
             if (helloText) {
                helloText.classList.add('fade-in');
