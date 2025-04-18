@@ -9,11 +9,6 @@
       <img class="item item-1" [src]="image.src" alt="Image {{ $index + 1 }}" (click)="openImageModal($index, 1)" />
       }
    </div>
-   <div class="gallery-wrap2-2">
-      @for (image of images2; track $index) {
-      <img class="item item-1" [src]="image.src" alt="Image {{ $index + 1 }}" (click)="openImageModal($index, 1)" />
-      }
-   </div>
    <div class="gallery-wrap3">
       @for (image of images3; track $index) {
       <img class="item item-1" [src]="image.src" alt="Image {{ $index + 1 }}" (click)="openImageModal($index, 2)" />
